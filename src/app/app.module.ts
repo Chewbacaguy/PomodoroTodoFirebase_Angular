@@ -6,11 +6,13 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore'
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { TodoComponent } from './todo/todo.component';
+import { PomodoroComponent } from './pomodoro/pomodoro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    PomodoroComponent
   ],
   imports: [
     BrowserModule,

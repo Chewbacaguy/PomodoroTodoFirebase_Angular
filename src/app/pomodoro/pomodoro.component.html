@@ -1,0 +1,23 @@
+<div class="pomodoro-container">
+    <h1 class="display-6 fw-bold">Pomodoro Timer</h1>
+    <hr class="divider"> 
+    <img class="tomato-icon" src="assets/Fotos/pomodoro.png" alt="Tomato Icon">
+    
+    <div class="button-row">
+      <button class="pomodoro-button" [ngClass]="{'active': selectedButton === 1}" (click)="selectButton(1)">
+        Pomodoro
+      </button>
+      <button class="break-button" [ngClass]="{'active': selectedButton === 2}" (click)="selectButton(2)">
+        5 Min Break
+      </button>
+      <button class="break-button" [ngClass]="{'active': selectedButton === 3}" (click)="selectButton(3)">
+        15 Min Break
+      </button>
+    </div>
+    <div class="timer">
+      <span>{{ formatTime(minutes) }}:{{ formatTime(seconds) }}</span>
+    </div>
+    <button class="timer-control-button" (click)="toggleTimer()">
+      {{ getButtonLabel() }}
+    </button>
+  </div>

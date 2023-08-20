@@ -7,6 +7,7 @@ import { TodoService } from '../shared/todo.service';
   styles: [
   ]
 })
+
 export class TodoComponent implements OnInit {
 
   todos: any[] = [];
@@ -34,6 +35,13 @@ export class TodoComponent implements OnInit {
   
   onDelete(id:string){
     this.todoService.deleteTodo(id);
+  }
+
+  onKeyPress(event: KeyboardEvent, titleInput: HTMLInputElement): void {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent default Enter behavior (e.g., form submission)
+      this.onClick(titleInput);
+    }
   }
 
 }

@@ -1,4 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('src\assets\Fotos\tokyo AI.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .card-body {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .list-group-item {
+    background-color: rgb(255, 255, 255); /* Match the main card transparency */
+    border: none; /* Remove the border for consistency */
+  }
+
 .list-group-item span {
     cursor: pointer;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: #ffffff; /* Greyish color */
+  }
