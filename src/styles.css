@@ -22,5 +22,17 @@ body {
 
 .completed {
     text-decoration: line-through;
-    color: #ffffff; /* Greyish color */
+    color: #929292; /* Greyish color */
+  }
+
+
+.edit-icon {
+    padding-right: 8px;
+  }
+  
+.edit-input {
+    border: none;
+    padding: 4px;
+    width: 70%;
+    margin-right: 10px;
   }
